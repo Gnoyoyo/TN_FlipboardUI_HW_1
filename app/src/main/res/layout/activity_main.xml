@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tnis.tngp17_001.flipboardui.MainActivity">
+
+
+
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imageView2" />
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEATURING"
+        android:textSize="12sp"
+        android:paddingTop="16dp"
+
+
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="ALAN WEISS\nFAST COMPANY\nBON APETTI"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#221111"
+            android:alpha="0.5"
+            />
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="World's Best Stargazing Site"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+        />
+
+        <TextView
+            android:id="@+id/tvNgeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="National Geographic"
+            android:textSize="10sp"
+            android:layout_below="@id/tvFooter"
+            android:layout_alignLeft="@id/tvFooter"
+            android:layout_marginTop="3dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ededed"
+            android:text="   3  mins"
+            android:alpha="0.8"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/tvNgeo"
+            android:layout_alignTop="@id/tvNgeo"
+
+        />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
